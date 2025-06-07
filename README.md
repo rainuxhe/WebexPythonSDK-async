@@ -33,3 +33,5 @@ python -m pip install webexpythonsdk-async
 
 - [ ] Support synchronous calls.
 - [ ] Add more examples.
+- [ ] Remove Python 2 style code.
+- [ ] Add type annotations.

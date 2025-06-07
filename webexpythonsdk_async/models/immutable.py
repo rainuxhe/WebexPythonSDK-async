@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 
-from webexpythonsdk.utils import json_dict
+from webexpythonsdk_async.utils import json_dict
 from .mixins.access_token import AccessTokenBasicPropertiesMixin
 from .mixins.admin_audit_event import (
     AdminAuditEventBasicPropertiesMixin,
@@ -31,7 +31,7 @@ from .mixins.meeting_invitees import MeetingInviteeBasicPropertiesMixin
 from .mixins.meeting_registrants import MeetingRegistrantBasicPropertiesMixin
 
 
-class ImmutableData(object):
+class ImmutableData:
     """Model a Webex JSON object as an immutable native Python object."""
 
     def __init__(self, json_data):
@@ -44,7 +44,6 @@ class ImmutableData(object):
             TypeError: If the input object is not a dictionary or string.
 
         """
-        super(ImmutableData, self).__init__()
         self._json_data = json_dict(json_data)
 
     def __getattr__(self, item):
