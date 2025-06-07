@@ -1,5 +1,5 @@
 __title__ = "webexpythonsdk_async"
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __description__ = "Asychronous Python SDK for the Webex APIs"
 __url__ = "https://github.com/rainuxhe/WebexPythonSDK-async"
 __download_url__ = "https://pypi.python.org/pypi/webexpythonsdk_async"
